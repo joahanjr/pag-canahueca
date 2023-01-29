@@ -6,18 +6,59 @@
 html{
     font-size: 62.5%;
 }
+.invisible{
+    display: none;
+}
 .cabecera{
     width: 100%;
     height: 80px;
-    background-color: #3CB35A;
+    background-image: url("https://i.ytimg.com/vi/tr_2WeUDBas/maxresdefault.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cuerpo{
+    width: 100%;
+    height: 100vh;
+    background-color: #F1F5F9;
+}
+.container-image{
     display: flex;
+    flex-direction: column;
+    width: 100%;
 }
-.name-pag{
+.container-image h1{
+    width: 100%;
     font-size: 3rem;
-    width: 40%;
-    height: 100%;
-    place-items: center;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFF0B;
+    margin: 15px 0 15px;
+    color: green;
 }
-.info-pag{
-    font-size: 1.8rem;
+.container-image img{
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 510px){
+    .cabecera{
+        height: 120px;
+    }
+}
+@media (min-width: 780px){
+    .cabecera{
+        height: 150px;
+    }
+}
+@media (min-width: 1024px){
+    .cabecera{
+        height: 180px;
+    }
+}
+@media (min-width: 1300px){
+    .cabecera{
+        height: 210px;
+    }
 }
